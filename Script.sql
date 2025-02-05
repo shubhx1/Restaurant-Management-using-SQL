@@ -142,6 +142,7 @@ CREATE TABLE Positions (
     Waiter VARCHAR(30)
 );
 
+-- Populate the data into the tables
 INSERT INTO Restaurant (Restaurant_ID, Name, Location, Email)
 VALUES 
 ('R001','Spice Venue', 'Main St', 'info@spicevenue.com'),
@@ -604,7 +605,7 @@ VALUES
 ('PT029', 'E029', 13.50, 18),
 ('PT030', 'E030', 15.50, 22);
 
-
+-- To get the number of records in each table
 select 'Restaurant',count(*)
 from Restaurant r 
 union
